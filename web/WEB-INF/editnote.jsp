@@ -14,13 +14,13 @@
     <body>
         <h1>Simple Note Keeper</h1>
         <h2>Edit Note</h2>
-        <form>
+        <form action="POST">
             <b>Title: </b>
-            <input type="text" value="" name="titleInput"><br><br>
+            <input type="text" value="${title}" name="titleInput"><br><br>
             <b>Contents:</b><br>
-            <textarea rows="7" cols="40" value="Content goes here" name="contentInput"></textarea><br><br>
+            <textarea rows="7" cols="40" name="contentInput">${content}</textarea><br><br>
             <input type="submit" value="Submit">
         </form><br>
-        <a href="/Week3Lab_SimpleNoteKeeper/note">Edit</a>
+        <a href="/Week3Lab_SimpleNoteKeeper/note">View</a>
     </body>
 </html>
