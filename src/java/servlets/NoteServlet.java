@@ -81,8 +81,10 @@ public class NoteServlet extends HttpServlet
         // create note
         String oldTitle = br.readLine();
         String oldContent = br.readLine();
-        Note note = new Note( oldTitle,
-                oldContent );
+        Note note = new Note();
+        
+        request.setAttribute("title", oldTitle);
+        request.setAttribute("content", oldContent);
         br.close();
         fr.close();
         
